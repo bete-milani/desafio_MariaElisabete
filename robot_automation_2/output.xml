@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-12-21T19:14:39.132328" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="/home/mmilani/Downloads/pessoal/automation_Maria_Elisabete/robot_automation/tests/login_test.robot">
+<test id="s1-t1" name="Realizar login com sucesso" line="12">
+<kw name="Given eu estou na página de login">
+<kw name="Open Application" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-21T19:14:39.262611" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-21T19:14:39.262385" elapsed="4.841527"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2024-12-21T19:14:39.262038" elapsed="4.842100"/>
+</kw>
+<status status="PASS" start="2024-12-21T19:14:39.261660" elapsed="4.842584"/>
+</kw>
+<kw name="When eu faço login com usuário válido">
+<kw name="Login As Admin" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-21T19:14:44.106969" level="INFO">Clicking element 'css:.oxd-input--active'.</msg>
+<msg time="2024-12-21T19:14:44.217119" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-21T19:14:44.217461" level="FAIL">Element with locator 'css:.oxd-input--active' not found.</msg>
+<arg>css:.oxd-input--active</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-21T19:14:44.105657" elapsed="0.113205">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css:.oxd-input--active</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:44.219268" elapsed="0.000080"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:[type="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:44.219622" elapsed="0.000068"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css:[type="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:44.219934" elapsed="0.000054"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css:.oxd-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:44.220180" elapsed="0.000051"/>
+</kw>
+<kw name="Capture Screenshot On Success" owner="keywords">
+<status status="NOT RUN" start="2024-12-21T19:14:44.220515" elapsed="0.000058"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2024-12-21T19:14:44.105121" elapsed="0.115650">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<status status="FAIL" start="2024-12-21T19:14:44.104580" elapsed="0.116385">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<kw name="Then eu vejo a tela principal do sistema">
+<status status="NOT RUN" start="2024-12-21T19:14:44.221332" elapsed="0.000060"/>
+</kw>
+<doc>Realiza login no sistema com sucesso.</doc>
+<status status="FAIL" start="2024-12-21T19:14:39.260444" elapsed="4.961262">Element with locator 'css:.oxd-input--active' not found.</status>
+</test>
+<test id="s1-t2" name="Cadastrar novo administrador" line="18">
+<kw name="Given estou logado no sistema">
+<kw name="Open Application" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-21T19:14:44.224375" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-21T19:14:44.223944" elapsed="4.018958"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2024-12-21T19:14:44.223332" elapsed="4.019813"/>
+</kw>
+<kw name="Login As Admin" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-21T19:14:48.244751" level="INFO">Clicking element 'css:.oxd-input--active'.</msg>
+<msg time="2024-12-21T19:14:48.339937" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-21T19:14:48.340496" level="FAIL">Element with locator 'css:.oxd-input--active' not found.</msg>
+<arg>css:.oxd-input--active</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-21T19:14:48.244314" elapsed="0.096467">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css:.oxd-input--active</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:48.341128" elapsed="0.000055"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:[type="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:48.341359" elapsed="0.000045"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css:[type="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:48.341557" elapsed="0.000041"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css:.oxd-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:48.341753" elapsed="0.000040"/>
+</kw>
+<kw name="Capture Screenshot On Success" owner="keywords">
+<status status="NOT RUN" start="2024-12-21T19:14:48.342063" elapsed="0.013949"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2024-12-21T19:14:48.243572" elapsed="0.112754">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<status status="FAIL" start="2024-12-21T19:14:44.222839" elapsed="4.133662">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<kw name="When eu preencho o formulário de cadastro de administrador">
+<status status="NOT RUN" start="2024-12-21T19:14:48.357068" elapsed="0.000063"/>
+</kw>
+<kw name="Then o novo administrador é cadastrado com sucesso">
+<status status="NOT RUN" start="2024-12-21T19:14:48.357440" elapsed="0.000049"/>
+</kw>
+<doc>Cadastra um novo administrador no sistema.</doc>
+<status status="FAIL" start="2024-12-21T19:14:44.222135" elapsed="4.135612">Element with locator 'css:.oxd-input--active' not found.</status>
+</test>
+<test id="s1-t3" name="Buscar e deletar administrador" line="24">
+<kw name="Given estou logado no sistema">
+<kw name="Open Application" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-21T19:14:48.359865" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-21T19:14:48.359552" elapsed="3.389245"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2024-12-21T19:14:48.359088" elapsed="3.389912"/>
+</kw>
+<kw name="Login As Admin" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-21T19:14:51.750190" level="INFO">Clicking element 'css:.oxd-input--active'.</msg>
+<msg time="2024-12-21T19:14:51.854450" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-21T19:14:51.854754" level="FAIL">Element with locator 'css:.oxd-input--active' not found.</msg>
+<arg>css:.oxd-input--active</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-21T19:14:51.749920" elapsed="0.105128">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css:.oxd-input--active</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:51.855324" elapsed="0.000048"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:[type="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:51.855520" elapsed="0.000045"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css:[type="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:51.855690" elapsed="0.000033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css:.oxd-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-21T19:14:51.855860" elapsed="0.000034"/>
+</kw>
+<kw name="Capture Screenshot On Success" owner="keywords">
+<status status="NOT RUN" start="2024-12-21T19:14:51.856087" elapsed="0.000041"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2024-12-21T19:14:51.749349" elapsed="0.106909">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<status status="FAIL" start="2024-12-21T19:14:48.358698" elapsed="3.497683">Element with locator 'css:.oxd-input--active' not found.</status>
+</kw>
+<kw name="When eu busco o administrador recém-cadastrado">
+<status status="NOT RUN" start="2024-12-21T19:14:51.856652" elapsed="0.000043"/>
+</kw>
+<kw name="And eu excluo o administrador">
+<status status="NOT RUN" start="2024-12-21T19:14:51.856923" elapsed="0.000040"/>
+</kw>
+<kw name="Then o administrador é excluído com sucesso">
+<status status="NOT RUN" start="2024-12-21T19:14:51.857171" elapsed="0.000041"/>
+</kw>
+<doc>Busca e exclui o administrador recém-cadastrado.</doc>
+<status status="FAIL" start="2024-12-21T19:14:48.358114" elapsed="3.499309">Element with locator 'css:.oxd-input--active' not found.</status>
+</test>
+<status status="FAIL" start="2024-12-21T19:14:39.133322" elapsed="12.724610"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
