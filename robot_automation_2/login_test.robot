@@ -1,6 +1,6 @@
 *** Settings ***
-Resource    ../resources/variables.robot
-Resource    ../resources/keywords.robot
+Resource    variables.robot
+Resource    keywords.robot
 
 *** Variables ***
 ${EMPLOYEE_NAME}       Novo Admin
